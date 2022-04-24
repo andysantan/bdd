@@ -31,7 +31,7 @@ public class CalculatorStepDefinitions {
 
     @Then("I should get {int}")
     public void i_should_get(Integer expectedResult) {
-        assertEquals(expectedResult, calculator.getResult());;
+        assertEquals(expectedResult, calculator.getResult());
     }
 
 }
