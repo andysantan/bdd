@@ -19,8 +19,6 @@ public class CalculatorStepDefinitions {
         this.calculator = calculator;
     }
 
-    private Integer total;
-
     @Given("I have a calculator")
     public void i_have_a_calculator() {
         assertNotNull(calculator);
@@ -28,7 +26,7 @@ public class CalculatorStepDefinitions {
 
     @When("I add {int} and {int}")
     public void i_add_and(Integer a, Integer b) {
-        total = calculator.add(a,b);
+        calculator.add(a,b);
     }
 
     @Then("I should get {int}")
